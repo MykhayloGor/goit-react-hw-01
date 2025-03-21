@@ -1,32 +1,31 @@
-import React from 'react';
-import styles from './Profile.module.css';
+import s from './Profile.module.css';
 
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div className={styles.profile}>
-      <div className={styles.description}>
+    <div className={s.profile}>
+      <div className={s.description}>
         <img
           src={image}
           alt="User avatar"
-          className={styles.avatar}
+          className={s.avatar}
         />
-        <p className={styles.name}>{name}</p>
-        <p className={styles.tag}>@{tag}</p>
-        <p className={styles.location}>{location}</p>
+        <p className={s.name}>{name}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
 
-      <ul className={styles.stats}>
+      <ul className={s.stats}>
         <li>
-          <span className={styles.label}>Followers</span>
-          <span className={styles.quantity}>{stats.followers}</span>
+          <span className={s.label}>Followers</span>
+          <span className={s.quantity}>{stats.followers}</span>
         </li>
         <li>
-          <span className={styles.label}>Views</span>
-          <span className={styles.quantity}>{stats.views}</span>
+          <span className={s.label}>Views</span>
+          <span className={s.quantity}>{stats.views}</span>
         </li>
         <li>
-          <span className={styles.label}>Likes</span>
-          <span className={styles.quantity}>{stats.likes}</span>
+          <span className={s.label}>Likes</span>
+          <span className={s.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
@@ -34,3 +33,4 @@ const Profile = ({ name, tag, location, image, stats }) => {
 };
 
 export default Profile;
+
